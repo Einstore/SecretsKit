@@ -6,12 +6,18 @@ Encrypt and decrypt secrets in Vapor 4
 
 Encrypting data securely is a process that needs to be done "just right". By any deviation you will be degrading the strength of your encryption so please follow the steps described below to the point.
 
-
 ### Use
 
 #### Generating random data
 
 Use included `RandomGenerator` app to generate an array of trully randomised bytes. You can of course generate your own sequence, just make sure the data is 32 bytes long, has not been generated from a string (strings are much simpler then random Data generated using `URandom`) and the whole thing is `base64` encoded.
+
+You can install `random-generator` utility via `brew`
+
+```bash
+brew tap einstore/homebrew-tap
+brew install random-generator
+```
 
 If you run `RandomGenerator` from this package, it should output what you need right away.
 
